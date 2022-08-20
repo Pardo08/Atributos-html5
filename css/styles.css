@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    background-color: aqua;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+.centrar {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}

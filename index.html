@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- ACA VA EL ATRIBUTO LANG Y TRANSLATE--> 
+<html lang="es" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos</title>
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+<!--- ACA VA EL ATRIBUTO ID -->
+    <div id="Atributos"></div>
+</head>
+<!-- ACA VA EL ATRIBUTO CLASS-->
+<body>
+    <header class="row">
+        <div class="col-md-12 titulo">
+            <h1>What's up brothers</h1>
+        </div>
+    </header>
+
+    <div class="row">
+        <section class="col-md-12 centrar">
+<!-- ACA VA EL ATRIBUTO TITLE-->
+            <img src="../atributos/images/messi.jpeg" 
+                title="CON LOS 6 BALONES DE ORO">
+        </section>
+    </div>
+<!-- ACA VA EL ATRIBUTO DATA-->
+<div id="compartir">   
+    <a href="https://instagram.com/j_pardo08?igshid=YmMyMTA2M2Y=" data-share="43">Instagram</a>
+    <a href="https://api.whatsapp.com/send?phone=3182904164" data-share="66">WhatsApp</a>
+    <a href="https://plus.google.com/share?url=https://lenguajehtml.com/" data-share="38">Google</a>
+</div>
+
+    <script>
+        var links = document.querySelectorAll("#compartir a");
+
+            links[0].dataset.share; // 43
+            links[1].dataset.share; // 66
+            links[2].dataset.share; // 38
+    </script>
+
+<!-- ACA VA EL ATRIBUTO ACCESSKEY-->
+<form>
+    <input accesskey="N" placeholder="Nombre (ALT+N)" /> <!-- Campo de datos -->
+    <input accesskey="A" placeholder="Apellidos (ALT+A)" /> <!-- Campo de datos -->
+    <a accesskey="L" href="#">Enlace (ALT+L)</a> <!-- Enlace HTML -->
+    <button accesskey="B">Botón (ALT+B)</button> <!-- Botón HTML -->
+</form>
+
+<!-- ACA VA EL ATRIBUTO DIR-->
+<p>Esto es un ejemplo de texto con direccionalidad de izquierda a derecha.</p>
+<p dir="rtl">Esto es un ejemplo de texto con direccionalidad de derecha a izquierda.</p>
+
+<!-- ACA VA EL ATRIBUTO STYLE-->
+<p style="background: red; color: white;">Esto es un mensaje con estilos CSS</p>
+
+</body>
+</html>
